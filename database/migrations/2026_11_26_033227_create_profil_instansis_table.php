@@ -17,8 +17,8 @@ return new class extends Migration
         $table->string('nama_lembaga');
         $table->string('jenis_lembaga')->nullable(); // Contoh: Perusahaan, Yayasan, Kampus, UMKM
         $table->text('deskripsi')->nullable();
-        $table->text('alamat_lengkap');
-        $table->string('kota');
+        $table->text('alamat_lengkap')->nullable();
+        $table->string('kota')->nullable();
         $table->string('tautan_situs')->nullable();
         $table->string('logo')->nullable();
         $table->timestamps();
